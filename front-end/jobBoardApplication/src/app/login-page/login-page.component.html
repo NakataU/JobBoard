@@ -1,0 +1,35 @@
+<body>
+    <div class="jb-login-container">
+        <div class="jb-login-form-container"> 
+            <h1 class="jb-login-form-container--header">Вход</h1>
+            <div class="jb-login-form-container--panel">
+                <div class="jb-login-toggle-container">
+                    <input type="radio" class="btn-check jb-login-toggle--item" name="options" id="option1" autocomplete="off" checked onclick="location.href='/login-page-component';">
+                    <label id="jb-left-toggle" class="btn btn-secondary" for="option1">Кандидат</label>
+        
+                    <input type="radio" class="btn-check jb-login-toggle--item" name="options" id="option2" autocomplete="off" onclick="location.href='/login-company-page-component';">
+                    <label id="jb-right-toggle" class="btn btn-secondary" for="option2">Работодател</label>
+                </div>
+            
+                <label class="jb-login-form-label">Имейл</label>
+                <input type="email" class="jb-login-form-text-input" #email placeholder="Въведете имейла">
+                <label class="jb-login-form-label">Парола</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" #password placeholder="Въведете парола">
+                <button class="jb-login-panel-button"(click) = "getVal(email.value,password.value)">ВЛЕЗ</button>
+            </div>
+            <div class="jb-login-form-container--register">
+                    <a routerLink="/registration-person-page-component" class="jb-register-text">
+                        Нямаш профил?<br>
+                        Регистрирай се!
+                    </a>
+                    
+            </div>
+        </div>
+        <div class="jb-login-image-container">
+            <div class="jb-login-image"></div>
+        </div>
+    
+       
+    </div>
+    </body>
+    

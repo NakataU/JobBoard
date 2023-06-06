@@ -1,0 +1,16 @@
+<div *ngFor="let application of applications" class="jb-candidate-item-container">
+    <div class="jb-candidate-item">
+        <div class="jb-candidate-item--candidate-info">
+            <h3 class="jb-candidate-info--name">
+                {{application.firstName}} {{application.lastName}}
+            </h3>
+            <h4 class="jb-candidate-info--email">
+                {{application.email}}
+            </h4>
+        </div>
+        <div class="jb-candidate-item--options">
+            <button class="jb-options--download-cv jb-button">Изтегли CV</button>
+            <button class="jb-options--favourite jb-button active"  [class.active]='application.favoured' (click)="toggleClass(application)"><span class="material-symbols-outlined">star</span></button>
+        </div>
+    </div>
+</div>

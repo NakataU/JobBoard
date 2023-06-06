@@ -1,0 +1,50 @@
+// font sizes
+$jb-job-descr-list-font-size: 14px;
+$jb-job-descr-heading-font-size--mobile: 16px;
+$jb-company-label-font-size--mobile: 11px;
+
+//colors
+$jb-border-color: #E2E2E2;
+$jb-job-descr-list-font-color: #A0A0A0;
+$jb-job-descr-list-font-color--active: black;
+$jb-job-descr-list-border-width: 3px;
+
+$jb-body-color: #F6FFFC;
+$jb-accent-color: #35A17D;
+$jb-main-text-color: #252525;
+
+.jb-no-active-postings-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 130px;
+    margin: 20px 10px 20px 10px; 
+    border-style: solid;
+    border-color: $jb-border-color;
+    border-width: $jb-job-descr-list-border-width;
+    border-radius: 10px;
+    background-color:white;
+}
+
+.jb-no-active-postings--heading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 300px;
+    color:$jb-main-text-color;
+}
+
+.jb-no-active-postings--info{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A0A0A0;
+    justify-content: center;
+}

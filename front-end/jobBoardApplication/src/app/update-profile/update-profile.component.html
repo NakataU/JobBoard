@@ -1,0 +1,24 @@
+<body>
+
+    <div id="title">
+        Данни за профила
+    </div>
+
+    <div class="modal">
+
+        <span id="label">Име</span>
+        <input type="text" #fName id="text">
+
+
+        <span id="label">Фамилия</span>
+        <input type="text" #lName id="text">
+
+
+        <span id="label">Имейл</span>
+        <input type="text" #email id="text">
+
+        <input type="submit" id="button" (click)="getVal(fName.value,lName.value,email.value)" value="ЗАПАЗИ">
+
+
+    </div>
+</body>

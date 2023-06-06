@@ -1,0 +1,33 @@
+$jb-body-color: #F6FFFC;
+$jb-accent-color: #35A17D;
+$jb-main-text-color: #252525;
+
+body{
+    display: flex;
+    height: 90vh;
+    background-color: $jb-body-color;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jb-posting-candidates-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding-top: 90px;
+}
+
+.jb-posting-candidates-header{
+    color: $jb-main-text-color;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+}
+
+.jb-posting-candidate-item{
+    width: 100%;
+}

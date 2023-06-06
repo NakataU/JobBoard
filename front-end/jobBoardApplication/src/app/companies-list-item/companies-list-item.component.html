@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<div class="jb-company-item-container" *ngFor="let company of companies">
+    <div class="jb-company-item">
+        <div class="jb-company-item--company">
+            <div class="jb-company-logo-container">
+                <img class="jb-company-logo" src={{company.imageUrl}} alt="">
+            </div>
+            <div class="jb-company--name">{{company.name}}</div>
+        </div>
+        <div class="jb-company-item--navigation">
+            <div class="jb-navigation--text">виж обявите</div>
+            <div class="jb-navigation--chevron"><span class="material-symbols-outlined">chevron_right</span></div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+<div class="jb-list-item-container">
+    <div class="jb-list-item" *ngFor="let jobpost of jobposts" (click)="onJobItemClick(jobpost.id)">
+        <div class="jb-company">
+            <div class="jb-company-logo-container">
+                <img class="jb-company-logo" src= {{jobpost.company.imageUrl}} alt="">
+            </div>
+            <div class = "jb-company-label-container">
+                <p class = "jb-company-label"> {{jobpost.company.name}} </p>
+            </div>
+        </div>
+        <div class="jb-job-descr-container">
+            <div class="jb-job-descr">
+                <h2 class="jb-job-descr-heading"> {{jobpost.title}} </h2>
+                <div class="jb-job-descr-details">
+                    <p class="jb-job-descr-tags jb-job-descr-details--item">София; ИТ</p>
+                    <p class="js-job-descr-date jb-job-descr-details--item">
+                        <i class="fas fa-calendar-alt"></i> {{jobpost.date | date}}
+                    </p>
+                </div>
+            </div>
+            <div class="jb-chevron-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+</div>

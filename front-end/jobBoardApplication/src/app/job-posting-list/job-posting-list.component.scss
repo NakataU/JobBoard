@@ -1,0 +1,186 @@
+// font sizes
+$jb-job-descr-list-font-size: 14px;
+$jb-job-descr-heading-font-size--mobile: 16px;
+$jb-company-label-font-size--mobile: 11px;
+
+//colors
+$jb-border-color: #E2E2E2;
+$jb-job-descr-list-font-color: #A0A0A0;
+$jb-job-descr-list-font-color--active: black;
+$jb-job-descr-list-border-width: 3px;
+
+.jb-list-item-container{
+    display: block;
+    width: fit-content;
+    height: auto;
+    margin: 10px;
+}
+
+.jb-list-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "jbCompany jbJobDescr";
+    width: 560px;
+    height: 130px;
+    margin: 20px 10px 20px 10px; 
+    border-style: solid;
+    border-color: $jb-border-color;
+    border-width: $jb-job-descr-list-border-width;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:white;
+}
+
+.jb-list-item.active{
+    border-color: $jb-job-descr-list-font-color--active;
+}
+
+
+.jb-company{
+    position: relative;
+    top: -$jb-job-descr-list-border-width;
+    left: -$jb-job-descr-list-border-width;
+    
+    grid-area: jbCompany;
+
+    display: grid;
+    grid-template-areas: 
+        "logo"
+        "logo"
+        "logo"
+        "companyName";
+    width: 100%;
+    height: 130px;
+    border-radius: 10px 0px 0px 10px;
+    border-style: solid;
+    border-width: $jb-job-descr-list-border-width;
+    border-radius: 10px 0px 0px 10px;
+    border-color: $jb-border-color;
+    padding: 10px 0px 24px 0px;
+}
+
+.jb-company.active{
+    border-color: $jb-job-descr-list-font-color--active;
+}
+
+.jb-company-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+    border-radius: 10px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.jb-company-logo {
+    max-width: 100px;
+    max-height: 60px;
+}
+
+.jb-company-label-container{
+    display: flex;
+    height: 100%;
+    grid-area: companyName;
+    justify-content: center;
+}
+
+.jb-company-label{
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    justify-self: center;
+    color: $jb-job-descr-list-font-color;
+}
+
+.jb-job-descr-container{
+    position: relative;
+    top:-2px;
+    left:-2px;
+    display: grid;
+    grid-template-columns: 20fr 1fr;
+    grid-template-areas: "text chevron";
+    grid-area: jbJobDescr;
+    background-color: none;
+    padding: 12px 10px 12px 16px ;
+    width: 100%;
+    height: 130px;
+    //background-color: aquamarine;
+}
+
+.jb-job-descr{
+    position: relative;
+    display: block;
+}
+
+.jb-job-descr-heading{
+    display: block;
+    padding-left: 10px;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top:0px;
+    margin-right: 10px;
+    padding-left: 0px;
+    font-weight: 600;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.jb-job-descr-details{
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 0px;
+    height: 30px;
+    //background-color: bisque;
+}
+
+.jb-job-descr-details--item{
+    display: block;
+    //background-color: rgb(161, 38, 59);
+    height: fit-content;
+    margin: 0px;
+    font-size: $jb-job-descr-list-font-size;
+    color: $jb-job-descr-list-font-color;
+}
+
+.fa-calendar-alt{
+    margin-right: 8px;
+}
+
+
+.jb-chevron-right{
+    width: 17px;
+    height: auto;
+    margin-top: -11px;
+    position: relative;
+    top: 50px;
+    color: $jb-job-descr-list-font-color;
+}
+
+.jb-chevron-right.active{
+    color: $jb-job-descr-list-font-color--active;
+}
+
+@media screen and (max-width: 800px) {
+    .jb-list-item-container{
+        width: 100%;
+        margin: 0px;
+        padding: 5px;
+    }
+    .jb-list-item{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .jb-job-descr-heading{
+        font-size: $jb-job-descr-heading-font-size--mobile;
+        height: 60px;
+        padding-left: 0px;
+    }
+
+    .jb-company-label{
+        font-size: $jb-company-label-font-size--mobile;
+    }
+  }

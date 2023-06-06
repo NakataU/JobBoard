@@ -1,0 +1,68 @@
+$jb-body-color: #F6FFFC;
+$jb-main-text-color: #252525;
+$jb-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+
+body{
+    background-color: $jb-body-color;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.jb-posting-panel--navigation{
+    text-decoration: none;
+    color: $jb-main-text-color;
+}
+
+.jb-posting-panel--navigation:hover{
+    animation: go-back-animation 0.2s ease-in-out forwards;
+}
+
+@keyframes go-back-animation {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-3px);
+    }
+}
+
+.jb-apply-page-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+    height: auto;
+    max-width: 1020px;
+}
+
+.jb-apply-posting-panel{
+    display: flex;
+    flex-direction: column;
+}
+
+.jb-posting-panel--navigation{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.jb-navigation-label{
+    font-weight: 700;
+    font-size: 15px;
+    color: $jb-main-text-color;
+}
+
+.jb-apply-form-panel{
+    display: block;
+    width: 100%;
+    max-width: 582px;
+    height: auto;
+}
+
+.jb-apply-form-panel--heading{
+    font-weight: 900;
+    font-size: 48px;
+    color: $jb-main-text-color;
+}
+

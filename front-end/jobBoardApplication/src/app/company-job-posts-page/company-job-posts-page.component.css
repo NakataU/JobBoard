@@ -1,0 +1,50 @@
+body {
+  background-color: #F6FFFC;
+}
+
+.jb-job-postings-container {
+  display: grid;
+  grid-template-areas: "search search search" "jblist jblist descr";
+  max-width: 1100px;
+  margin: 0px auto 0px auto;
+}
+
+.jb-job-postings-search-app {
+  grid-area: search;
+}
+
+.jb-job-posting-list-item-app {
+  grid-area: jblist;
+  width: auto;
+}
+
+.jb-job-posting-details-app {
+  grid-area: descr;
+  width: auto;
+}
+
+.jb-details-company-info--create-button {
+  display: inline-block;
+  background-color: #35A17D;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  width: 243px;
+  height: 40px;
+  margin: 20px 0px 0px 0px;
+  vertical-align: top;
+  position: absolute;
+  right: 100px;
+  margin-top: 0;
+}
+
+div {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-left: 100px;
+}/*# sourceMappingURL=company-job-posts-page.component.css.map */

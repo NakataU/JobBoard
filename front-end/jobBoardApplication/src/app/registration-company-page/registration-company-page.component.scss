@@ -1,0 +1,138 @@
+// colours
+$jb-job-descr-list-font-color: #A0A0A0;
+$jb-accent-color: #35A17D;
+
+body {
+    height: 1800px;
+    background-color: #F6FFFC;
+}
+.jb-registration-company-container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    margin: 0% 10% 0% 10%;
+}
+
+.jb-registration-company-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100 px;
+    height: 100%;
+    min-width:400px;
+    
+}
+
+.jb-registration-company-form-container--header2{
+    font-weight: 400;
+    text-align: center;
+    color: #252525;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.jb-registration-company-form-container--header{
+    font-weight: 900;
+    text-align: center;
+    color: #252525;
+    margin-bottom: 41px;
+}
+
+.jb-registration-company-form-container--panel{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 394px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 25px;
+}
+.jb-registration-company-form-label{
+    font-weight: 700;
+    font-size: 15px;
+    color: $jb-job-descr-list-font-color;
+    margin-top: 14px;
+}
+
+.jb-registration-company-form-text-input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding: 12px 18px;
+    margin: 0px 0px 0px 0px;
+    background: #FFFFFF;
+    border: 2px solid $jb-job-descr-list-font-color;
+    border-radius: 8px;
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: black;
+}
+
+.form-control{
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding: 12px 18px;
+    margin: 0px 0px 0px 0px;
+    background: #FFFFFF;
+    border: 2px solid $jb-job-descr-list-font-color;
+    border-radius: 8px;
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: black;
+}
+
+.text-area{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 12px 18px;
+    margin: 0px 0px 0px 0px;
+    background: #FFFFFF;
+    border: 2px solid $jb-job-descr-list-font-color;
+    border-radius: 8px;
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #252525;
+}
+
+.jb-registration-company-panel-button{
+    display: block;
+
+    width: 100%;
+    height: 40px;
+
+    margin-top: 38px;
+    background-color: $jb-accent-color;
+    color: white;
+    border-radius: 6px;
+    border-style: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.jb-registration-company-image {
+    width: 800px;
+    height: 1024px;
+    display: block;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 120px;
+    //background-color: blue;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../resources/images-login/login_image.png");
+}

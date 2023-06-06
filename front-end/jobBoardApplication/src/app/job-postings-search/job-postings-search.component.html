@@ -1,0 +1,26 @@
+<script src="https://kit.fontawesome.com/ae4037ea1a.js" crossorigin="anonymous"></script>
+<div class="jb-job-postings-search-container">
+    <div class="jb-job-postings-search">
+        <p class="jb-job-postings-search--heading">
+            Твоето търсене:
+        </p>
+        <input type="text" class="jb-job-postings-search--keywords jb-input-field" #word>
+        <select name="" id="" class="jb-job-postings-search--category jb-input-field">
+            <option value="">ИТ</option>
+            <option value="">Маркетинг</option>
+            <option value="">Реклама</option>
+            <option value="">Дизайн</option>
+            <option value="">Администрация и управление</option>
+        </select>
+        <select name="" id="" #city class="jb-job-postings-search--city jb-input-field">
+            <option value="">София</option>
+            <option value="">Смолян</option>
+            <option value="">Хасково</option>
+            <option value="">Шумен</option>
+            <option value="">Варна</option>
+        </select>
+        <button class="jb-job-postings-search--button" (click)="onSearchClick(word.value, city.value)"><span class="material-symbols-outlined">
+            search
+            </span></button>
+    </div>
+</div>

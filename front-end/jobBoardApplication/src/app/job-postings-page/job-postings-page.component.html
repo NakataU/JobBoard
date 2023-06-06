@@ -1,0 +1,8 @@
+<body>
+    <div class="jb-job-postings-container">
+        <div class="jb-search-component"></div>
+        <app-job-postings-search class="jb-job-postings-search-app" (filterChanged)="onSearchFilterChange($event)"></app-job-postings-search>
+        <app-job-posting-list-item class="jb-job-posting-list-item-app" (jobPostIdChanged)="onJobPostIdChanged($event)" [filters]="filters"></app-job-posting-list-item>
+        <app-job-posting-details *ngIf="jobPostId" class="jb-job-posting-details-app" [id]="jobPostId"></app-job-posting-details>
+    </div>
+</body>

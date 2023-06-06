@@ -1,0 +1,46 @@
+$jb-job-descr-list-font-size: 14px;
+$jb-job-descr-heading-font-size--mobile: 16px;
+$jb-company-label-font-size--mobile: 11px;
+
+$jb-job-descr-list-font-color: #A0A0A0;
+$jb-details-separator-color: #A0A0A0;
+$jb-accent-color: #35A17D;
+
+.jb-details-container{
+    display: block;
+    max-width: 415px;
+    padding: 16px 30px 16px 30px;
+    border-radius: 17px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.35); 
+    margin: 0px 20px 30px 0px;
+    background-color: white;
+}
+
+.jb-details-company-info--heading{
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.jb-job-descr-details--item{
+    display: block;
+    //background-color: rgb(161, 38, 59);
+    height: fit-content;
+    margin: 0px;
+    font-size: $jb-job-descr-list-font-size;
+    color: $jb-job-descr-list-font-color;
+}
+
+.fa-calendar-alt{
+    margin-right: 8px;
+}
+
+.jb-details-separator{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $jb-details-separator-color;
+    margin: 15px 0px 40px 00px;
+}

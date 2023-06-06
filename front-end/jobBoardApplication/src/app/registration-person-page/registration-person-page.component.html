@@ -1,0 +1,24 @@
+<body>
+    <div class="jb-registration-person-container">
+        <div class="jb-registration-person-form-cotanier">
+            <h2 class="jb-registration-person-form-container--header2">Кандидат</h2>
+            <h1 class="jb-registration-person-form-container--header">Регистрация</h1>
+            <div class="jb-registration-person-form-container--panel">
+            <label class="jb-registration-person-form-label">Име</label>
+            <input type="text" class="jb-registration-person-form-text-input" #fName placeholder="Въведете име">
+            <label class="jb-registration-person-form-label">Фамилия</label>
+            <input type="text" class="jb-registration-person-form-text-input"  #lName placeholder="Въведете фамилия">
+            <label class="jb-registration-person-form-label">Имейл</label>
+            <input type="email" class="jb-registration-person-form-text-input"  #email placeholder="Въведете имейла">
+            <label class="jb-registration-person-form-label">Парола</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" #password placeholder="Въведете парола">
+            <button class="jb-registration-person-panel-button" (click) = "getVal(fName.value,lName.value,email.value,password.value)">РЕГИСТРАЦИЯ</button>
+        </div>
+    </div>
+        <div class="jb-registration-person-image-container">
+            <div class="jb-registration-person-image"></div>
+        </div>
+    </div>
+    </body>
+
+  

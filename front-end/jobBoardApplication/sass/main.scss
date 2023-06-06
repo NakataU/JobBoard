@@ -1,0 +1,26 @@
+$accent-color: #35A17D;
+
+// bootstrap variables override
+$nav-pills-link-active-bg: #9f9f9f;
+$nav-link-color: black;
+
+
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.btn-primary{
+    background-color: $accent-color !important;
+    border: none;
+}
+
+.navbar-brand{
+    color: $accent-color;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 59px;
+}
+
+.navbar{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

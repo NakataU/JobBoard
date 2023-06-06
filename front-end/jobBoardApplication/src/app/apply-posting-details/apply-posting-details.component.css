@@ -1,0 +1,38 @@
+.jb-details-container {
+  display: block;
+  max-width: 415px;
+  padding: 16px 30px 16px 30px;
+  border-radius: 17px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  margin: 0px 20px 30px 0px;
+  background-color: white;
+}
+
+.jb-details-company-info--heading {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.jb-job-descr-details--item {
+  display: block;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0px;
+  font-size: 14px;
+  color: #A0A0A0;
+}
+
+.fa-calendar-alt {
+  margin-right: 8px;
+}
+
+.jb-details-separator {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #A0A0A0;
+  margin: 15px 0px 40px 0px;
+}/*# sourceMappingURL=apply-posting-details.component.css.map */

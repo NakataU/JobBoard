@@ -1,0 +1,12 @@
+<h4>Активни обяви:</h4> 
+  <p>
+    <a routerLink="/add-job-post-page">
+        <button 
+         class="jb-details-company-info--create-button">СЪЗДАЙ</button>
+        </a>
+    </p>
+
+<div>
+    <app-company-job-posts-list *ngIf="jobPostId" class="jb-job-posting-list-app" [id]="jobPostId"></app-company-job-posts-list>
+    <app-company-job-posts-details *ngIf="jobPostId" class="jb-job-posting-details-app" [id]="jobPostId"></app-company-job-posts-details>
+</div>

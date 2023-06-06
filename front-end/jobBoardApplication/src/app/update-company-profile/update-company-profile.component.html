@@ -1,0 +1,49 @@
+<body>
+
+       <div id="title">
+              Данни за профила
+       </div>
+
+       <div class="modal">
+              <span id="label">Име</span> <br>
+              <input type="text" id="text" #name>
+              <br>
+
+              <span id="label">Лого</span> <br>
+              <input type="text" id="logo" #logo>
+
+              <span id="label">Имейл</span> <br>
+              <input type="text" id="text" #mail>
+              <br>
+
+              <span id="label">Телефон</span> <br>
+              <input type="text" id="text" #phone>
+              <br>
+              <span id="label">Град</span> <br>
+              <select id="city" name="city" #city>
+
+                     <option>София</option>
+                     <option>Хасково</option>
+
+              </select>
+              <br>
+
+              <span id="label">Адрес</span> <br>
+              <input type="text" id="text" #address>
+              <br>
+
+              <span id="label">Уебсайт</span> <br>
+              <input type="text" id="text" #website>
+              <br>
+
+              <span id="label">Описание</span> <br>
+              <textarea name="description" id="description" #description></textarea>
+              <br>
+
+              <input type="submit" id="button"
+                     (click)="getVal(name.value,logo.value,mail.value,phone.value,city.value,address.value,description.value,website.value)"
+                     value="ЗАПАЗИ">
+
+       </div>
+
+</body>

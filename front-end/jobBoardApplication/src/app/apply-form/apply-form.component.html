@@ -1,0 +1,42 @@
+<div class="jb-apply-form-panel--form-container">
+    <form class="jb-form">
+        <div class="jb-form--names">
+            <div class="jb-form--item">
+                <p class="jb-form--names--item--label">
+                    Име
+                </p>
+                <input type="text" #fname class="jb-form--text-input jb-text-input-name" placeholder="Въведете своето име">
+            </div>
+            <div class="jb-form--item">
+                <p class="jb-form--names--item--label">
+                    Фамилия
+                </p>
+                <input type="text" #lname class="jb-form--text-input" placeholder="Въведете своята фамилия">
+            </div>
+        </div>
+        <div class="jb-form--item">
+            <p class="jb-form--names--item--label">
+                E-mail
+            </p>
+            <input type="text" #email class="jb-form--text-input" placeholder="Въведете своя e-mail">
+        </div>
+        <div class="jb-form--item">
+            <p class="jb-form--names--item--label">
+                Прикачи своето CV
+            </p>
+            <div class="jb-form-drag-drop-container">
+                <div class="file-drop-area">
+                    <div class="jb-upload-icon">
+                        <span class="material-symbols-outlined">cloud_upload</span>
+                    </div>
+                    <div class="jb-upload-manual">
+                        <span class="choose-file-button">Изберете файлове</span>
+                        <span class="file-message">или ги издърпайте тук</span>
+                        <input class="file-input" type="file" #fileUploads (change)="onFileSelected($event)">
+                    </div>
+                </div>
+            </div>
+        </div>
+       <button type="button" routerLink="app-apply-success-page" class="jb-apply-button" (click)="getValue(fname.value, lname.value, email.value)">Изпрати</button>
+    </form>
+</div>

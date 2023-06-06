@@ -1,0 +1,73 @@
+.jb-company-item-container {
+  margin: 12px 0;
+  box-sizing: border-box;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 17px;
+  height: 90px;
+  width: 725px;
+  cursor: pointer;
+}
+
+.jb-company-item {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.jb-company-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #A0A0A0;
+  margin: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: blue;
+  height: 50px;
+  width: 100px;
+}
+
+.jb-company--name {
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #252525;
+  padding-left: 10px;
+}
+
+.jb-company-logo {
+  max-width: 100px;
+  max-height: 60px;
+}
+
+.jb-company-item--company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.jb-company-item--navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.jb-navigation--text {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #A0A0A0;
+  position: relative;
+  bottom: 3px;
+}
+
+.material-symbols-outlined {
+  color: #A0A0A0;
+}/*# sourceMappingURL=companies-list-item.component.css.map */

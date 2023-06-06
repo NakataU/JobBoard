@@ -1,0 +1,36 @@
+// custom variables
+$jb-body-color: #F6FFFC;
+
+body{
+    background-color: $jb-body-color;
+}
+
+#companyName{
+  font-size: 36px;
+  font-weight: 900;
+  position: relative;
+  left: 20px;
+}
+
+.jb-job-postings-container{
+    display: grid;
+    grid-template-areas:
+        "search search search"
+        "jblist jblist descr";
+    max-width: 1100px;
+    margin: 0px auto 0px auto;
+}
+
+.jb-job-postings-search-app{
+    grid-area: search;
+}
+
+.jb-job-posting-list-item-app{
+    grid-area: jblist;
+    width: auto;
+}
+
+.jb-job-posting-details-app{
+    grid-area: descr;
+    width: auto;
+}

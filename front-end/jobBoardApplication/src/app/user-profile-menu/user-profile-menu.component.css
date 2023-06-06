@@ -1,0 +1,39 @@
+#title{
+    text-align: center;
+    font-size: 48px;
+    font-family: Montserrat;
+    font-weight: 900;
+  }
+  
+  .modal
+  {
+    position:absolute;
+    top: 200px;
+    margin-left: 39%;
+    margin-right: 35%;
+    padding-top: 15px;
+    display: block;
+    width: 394px;
+    height: 136px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.35); 
+    background-color: white;
+  
+  }
+ 
+  #button{
+    margin-left: 7%;
+    margin-right: 5%;
+    margin-top: 10px;
+    height: 40px;
+    width: 344px;
+    background-color: #35A17D;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Montserrat;
+  }
+  

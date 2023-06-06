@@ -1,0 +1,20 @@
+.btn.btn-warning {
+  margin-left: 10px;
+}
+
+.btn.btn-danger {
+    margin-left: 10px;
+}
+
+.btn.btn-primary {
+    overflow: hidden;
+    margin: right -50px;;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.in-active {
+ display: none;
+}

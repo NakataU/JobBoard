@@ -1,0 +1,27 @@
+<div class="jb-details-container">
+    <div class="jb-details">
+        <div class="jb-details-company-info">
+            <h1 class="jb-details-company-info--heading jb-job-descr-heading">{{jobPost.title}}</h1>
+            <div class="jb-details-company-info--description jb-job-descr-details">
+                <p class="jb-job-descr-tags jb-job-descr-details--item">София; ИТ</p>
+                <p class="js-job-descr-date jb-job-descr-details--item">
+                    <i class="fas fa-calendar-alt"></i>{{jobPost.date}}
+                </p>
+
+                <span class="jb-details-button-span"> 
+                    <a routerLink= "/posting-candidates-page-component"> 
+            <button class="jb-details-company-info--apply-button">КАНДИДАТИ</button>
+                    </a>
+            <button
+
+            class="jb-details-company-info--delete-button" (click)="deleteJobPost();refreshPage()">ИЗТРИЙ</button>
+               </span> 
+
+        <span class="jb-details-separator"></span>
+        <div class="jb-details-description-container">
+            <p class="jb-details-desctiption">
+                {{jobPost.description}}
+            </p>
+        </div>
+    </div>
+</div>
